@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <link rel="icon" href="Imagens/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/produto/style.css">
+    <title> Produto </title>
+</head>
+<body>
+    
+    <header class="cabecalho-visivel">
+        <div class="logo-pesquisa">
+            <a href="index.html" class="logo">
+                <h1> MyEletronics </h1>
+                <img src="Imagens/logo.png">
+            </a>
+        
+            <form action="" method="GET">
+                <input type="search" name="pesquisa" class="pesquisa" 
+                placeholder="Digite o que você procura...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="perfil">
+                <a href="#"> 
+                    <i class="fa-solid fa-bars"></i>
+                    Meus pedidos 
+                </a>
+                <a href="#"> 
+                    <i class="fa-solid fa-user"></i>
+                    Minha conta 
+                </a>
+            </div>
+            <div class="carrinho">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p> 0 </p>
+            </div>
+        </div>
+        <div class="navegacao">
+            <div>
+                <nav>
+                    <a href="#"> Acessórios e Peças </a>
+                    <span></span>
+                    <a href="#"> Câmera e Foto </a>
+                    <span></span>
+                    <a href="#"> Videogames </a>
+                    <span></span>
+                    <a href="#"> Áudio e Vídeo </a>
+                    <span></span>
+                    <a href="#"> Eletrônicos Inteligentes </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <header class="cabecalho-oculto">
+        <div>
+            <i class="fa-solid fa-house"></i>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p> 0 </p>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="index.html" class="logo">
+                <h1> MyEletronics </h1>
+                <img src="Imagens/logo.png">
+            </a>
+        </div>
+        <div class="pesquisa-oculta">
+            <form action="" method="GET">
+                <input type="search" name="pesquisa" class="pesquisa" 
+                placeholder="Digite o que você procura...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="botao">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="navegacao-oculta">
+            <nav>
+                <a href="#"> Acessórios e Peças </a>
+                <a href="#"> Câmera e Foto </a>
+                <a href="#"> Videogames </a>
+                <a href="#"> Áudio e Vídeo </a>
+                <a href="#"> Eletrônicos Inteligentes </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <div>
+            <div class="info">
+                Erro no envio da avaliação: o campo "Você recomendaria esse produto a um amigo" 
+                precisa ser marcado!
+            </div>
+            <div class="produto">
+                <div>
+                    <img src="Imagens/iphone.jpg" alt="">
+                </div>
+                <div class="produto-detalhes">
+                    <h1> PAR Brinco Masculino Magnético / Imã / Alargador Falso - Vários Tamanhos - PAR </h1>
+                    <div class="avaliacao">
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-cinza"></i>
+                        <a href=".produto-avaliacoes"> (1478 avaliações) </a>
+                    </div>
+                    <form action="" method="POST">
+                        <select name="variacoes" id="">
+                            <option value="64GB"> 64GB </option>
+                            <option value="128GB"> 128GB </option>
+                            <option value="256GB"> 256GB </option>
+                            <option value="512GB"> 512GB </option>
+                            <option value="1TB"> 1TB </option>
+                        </select>
+                        <div class="quantidade-produto">
+                            <label for="quantidade"> Quantidade: </label>
+                            <input type="number" name="quantidade" min="1" value="1">
+                        </div>
+                        <div class="preco">
+                            <p> 
+                                <strong>2x</strong> de <strong>R$ 7,65</strong><br>
+                                A partir de <span><strong>R$ 15,30</strong></span>
+                            </p>
+                            <input type="submit" value="COMPRAR">
+                        </div>
+                    </form>
+                    <div class="cep">
+                        <h2> Calcule o Frete: </h2>
+                        <form action="" method="GET">
+                            <input type="number" min="10000000" max="99999999" placeholder="CEP">
+                            <input type="submit" value="OK">
+                        </form>
+                        <div class="tipos-frete">
+                            <p> R$ 9,50 / <strong> 12 a 18 dias úteis </strong> / Frete Econômico </p>
+                            <p> R$ 18,87 / <strong> 4 a 10 dias úteis </strong> / Loggi Expresso </p>
+                            <p> R$ 19,72 / <strong> 4 a 10 dias úteis </strong> / JadLog Expresso </p>
+                            <p> R$ 23,90 / <strong> 6 a 12 dias úteis </strong> / PAC Mini </p>
+                            <p> R$ 27,13 / <strong> 3 a 9 dias úteis </strong> / PAC </p>
+                            <p> R$ 51,91 / <strong> 1 a 5 dias úteis </strong> / Sedex </p>
+                        </div>
+                    </div>
+                    <div class="tipo-de-pagamento">
+                        <div class="cartao">
+                            <div class="imagens">
+                                <div>
+                                    <img src="Imagens/visa.png" alt="">
+                                    <img src="Imagens/mastercard.png" alt="">
+                                </div>
+                                <p class="botao-parcela"> 
+                                    Parcelas
+                                    <i class="fa-solid fa-arrow-down"></i>
+                                </p>
+                            </div>
+                            <div class="parcelas">
+                                <p> 1x de R$ 15,30 sem juros </p>
+                                <p> 2x de R$ 7,65 sem juros </p>
+                                <p> 3x de R$ 5,51 </p>
+                                <p> 4x de R$ 4,21 </p>
+                                <p> 5x de R$ 3,43 </p>
+                                <p> 6x de R$ 2,91 </p>
+                                <p> 7x de R$ 2,54 </p>
+                                <p> 8x de R$ 2,27 </p>
+                                <p> 9x de R$ 2,05 </p>
+                                <p> 10x de R$ 1,88 </p>
+                            </div>
+                        </div>
+                        <div class="pix">
+                            <img src="Imagens/pix.jpg" alt="">
+                            <p> R$ 15,30 </p>
+                        </div>
+                        <div class="boleto">
+                            <img src="Imagens/boleto.png" alt="">
+                            <p> R$ 15,30 </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="comentarios">
+            <div>
+                <h1>
+                    <span></span>
+                    <p> CONFIRA O QUE OS CLIENTES ACHARAM DA LOJA </p>
+                    <span></span> 
+                </h1>
+                <div>
+                    <div class="comentario">
+                        <div class="avaliacao">
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-cinza"></i>
+                            <p> - 29/06/2021 </p>
+                        </div>
+                        <p> A loja é muito boa. Entrega tudo no prazo, produtos com uma excelente qualidade,
+                        atendimento muito bom. Recomendo!    
+                        </p>
+                        <div class="comentario-perfil">
+                            <img src="Imagens/user_female.png">
+                            <p> Adriana Siva <br> São Paulo/SP </p>
+                        </div>
+                    </div>
+    
+                    <div class="comentario">
+                        <div class="avaliacao">
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-cinza"></i>
+                            <p> - 29/06/2021 </p>
+                        </div>
+                        <p> A loja é muito boa. Entrega tudo no prazo, produtos com uma excelente qualidade,
+                        atendimento muito bom. Recomendo! A loja é muito boa. Entrega tudo no prazo, produtos com uma excelente qualidade,
+                        atendimento muito bom. Recomendo!  
+                        </p>
+                        <div class="comentario-perfil">
+                            <img src="Imagens/user_male.png">
+                            <p> Mateus Siva <br> São Paulo/SP </p>
+                        </div>
+                    </div>
+    
+                    <div class="comentario">
+                        <div class="avaliacao">
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-cinza"></i>
+                            <p> - 29/06/2021 </p>
+                        </div>
+                        <p> A loja é muito boa. 
+                        </p>
+                        <div class="comentario-perfil">
+                            <img src="Imagens/user_male.png">
+                            <p> Tiago Siva <br> São Paulo/SP </p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <div class="detalhes">
+            <h1> PAR Brinco Masculino Magnético / Imã / Alargador Falso - Vários Tamanhos - PAR </h1>
+
+            <p> Confira vários tamanhos de brincos masculino pressão magnético deste modelo que simula um alargador real. Enviamos para todo o Brasil. Frete Apenas R$9,50. Frete Grátis nas compras a cima de R$180. Crie seu visual com os brincos masculinos da CODE. Dê um ar moderno ao seu look com o Brinco Magnético / Imã Masculino - Alargador Falso 
+                O Brinco Magnético / Imã Masculino - Alargador Falso  é uma ótima dica de presente para você 
+                dar para amigo ou namorado. A CODE Brincos Masculinos é uma loja virtual especializada em 
+                brincos para homens. Confira todas as opções de brincos de pressão, brinco de argola e ande 
+                na moda com a CODE aqui.  
+            </p>
+            <p> Incluso: 1 PAR de Brinco Magnético / Imã Masculino - Alargador Falso - Preto </p>
+            <p> Tamanho: Variados </p>
+            <p> Espessura: 3mm </p>
+            <p> Material: Hematita Magnética e Aço Inoxidável </p>
+            <p> Feche: Magnético </p>
+            <p> O Brinco Masculino Magnético é a prova d'água? Sim, este modelo não descasca a tinta em 
+                contato com a água, porém sugerimos que não deixe o produto em contato com água salgada, shampoo, sabonetes ou outro produto químico.  Evite o contato com o suor pois a ureia contida nele pode agredir o revestimento do brinco. </p>
+        </div>
+
+        <div class="produto-avaliacoes">
+            <h1>
+                <span></span>
+                AVALIAÇÃO DO PRODUTO
+                <span></span>
+            </h1>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star estrela-amarela"></i>
+                <i class="fa-solid fa-star estrela-amarela"></i>
+                <i class="fa-solid fa-star estrela-amarela"></i>
+                <i class="fa-solid fa-star estrela-amarela"></i>
+                <i class="fa-solid fa-star estrela-cinza"></i>
+                <p> (1478) </p> ->
+                <p> Média: 4/5 estrelas</p>
+            </div>
+            <div class="porcentagem-avaliacoes">
+                <div>
+                    <p> 5 estrelas </p>
+                    <span>
+                        <span style="width: 10rem;"></span>
+                    </span>
+                    <a href="#"> 83% </a>
+                </div>
+                <div>
+                    <p> 4 estrelas </p>
+                    <span>
+                        <span style="width: 8rem;"></span>
+                    </span>
+                    <a href="#"> 63% </a>
+                </div>
+                <div>
+                    <p> 3 estrelas </p>
+                    <span>
+                        <span style="width: 6rem;"></span>
+                    </span>
+                    <a href="#"> 43% </a>
+                </div>
+                <div>
+                    <p> 2 estrelas </p>
+                    <span>
+                        <span style="width: 4rem;"></span>
+                    </span>
+                    <a href="#"> 23% </a>
+                </div>
+                <div>
+                    <p> 1 estrela </p>
+                    <span>
+                        <span style="width: 2rem;"></span>
+                    </span>
+                    <a href="#"> 13% </a>
+                </div>
+            </div>
+            <div class="avaliacao-clientes">
+                <div>
+                    <div>
+                        <img src="Imagens/user_male.png" alt="">
+                        <p> User11452 </p>
+                    </div>
+                    <div>
+                        <div class="avaliacao">
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-cinza"></i>
+                            <p> - 15 dias atrás </p>
+                        </div>
+                        <p> excelentes brincos e piercing couberam perfeitamente </p>
+                    </div>
+                </div>
+                <p class="compra-verificada">
+                    <i class="fa-solid fa-square-check"></i> 
+                    Compra Verificada 
+                </p>
+                <p> 
+                    <i class="fa-solid fa-check"></i>
+                    Sim, recomendaria este produto a um amigo 
+                </p>
+            </div>
+
+            <div class="avaliacao-clientes">
+                <div>
+                    <div>
+                        <img src="Imagens/user_male.png" alt="">
+                        <p> User11452 </p>
+                    </div>
+                    <div>
+                        <div class="avaliacao">
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-cinza"></i>
+                            <p> - 2 meses atrás </p>
+                        </div>
+                        <p> excelentes brincos e piercing couberam perfeitamente </p>
+                    </div>
+                </div>
+                <p class="compra-verificada">
+                    <i class="fa-solid fa-square-check"></i> 
+                    Compra Verificada 
+                </p>
+                <p> 
+                    <i class="fa-solid fa-check"></i>
+                    Sim, recomendaria este produto a um amigo 
+                </p>
+            </div>
+
+            <div class="avaliacao-clientes">
+                <div>
+                    <div>
+                        <img src="Imagens/user_female.png" alt="">
+                        <p> User11452 </p>
+                    </div>
+                    <div>
+                        <div class="avaliacao">
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-amarela"></i>
+                            <i class="fa-solid fa-star estrela-cinza"></i>
+                            <p> - 1 mes atrás </p>
+                        </div>
+                        <p> excelentes brincos e piercing couberam perfeitamente  excelentes brincos e 
+                            piercing couberam perfeitamente  excelentes brincos e piercing couberam 
+                            perfeitamente </p>
+                    </div>
+                </div>
+                <p class="compra-verificada">
+                    <i class="fa-solid fa-square-check"></i> 
+                    Compra Verificada 
+                </p>
+                <p> 
+                    <i class="fa-solid fa-xmark"></i>
+                    Não recomendaria este produto a um amigo 
+                </p>
+            </div>
+
+            <div class="produto-paginacao">
+                <a href="#"> 
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <a href="#"> 
+                    1
+                </a>
+                <a href="#"> 
+                    2
+                </a>
+                <a href="#"> 
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="avaliacao-form">
+                <h2> Avaliação do Produto </h2>
+                <form action="" method="GET">
+                    <p> - Dê uma nota geral para o produto (clique na estela): </p>
+                    <div class="avaliacao-p">
+                        <label for="um"><i class="fa-solid fa-star star-branca"></i></label>
+                        <label for="dois"><i class="fa-solid fa-star star-branca"></i></label>
+                        <label for="tres"><i class="fa-solid fa-star star-branca"></i></label>
+                        <label for="quatro"><i class="fa-solid fa-star star-branca"></i></label>
+                        <label for="cinco" style="margin-right: 0.5rem;">
+                            <i class="fa-solid fa-star star-branca"></i>
+                        </label>
+                        <input type="radio" name="estrelas" value="pessimo" id="um">
+                        <input type="radio" name="estrelas" value="ruim" id="dois">
+                        <input type="radio" name="estrelas" value="medio" id="tres">
+                        <input type="radio" name="estrelas" value="bom" id="quatro">
+                        <input type="radio" name="estrelas" value="otimo" id="cinco" >
+                        <p> </p>
+                    </div>
+                    <p> - Dê uma nota geral para o produto: </p>
+                    <textarea name="detalhes"cols="30" rows="10" 
+                    placeholder="Dê detalhes sobre o produto e por que deu a nota acima."></textarea>
+                    <p> - Você recomendaria esse produto a um amigo? </p>
+                    <div class="recomendacao">
+                        <div>
+                            <input type="radio" name="recomendacao" value="sim"> Sim
+                        </div>
+                        <div>
+                            <input type="radio" name="recomendacao" value="nao"> Não
+                        </div>
+                    </div>
+                    <input type="submit" value="Enviar Avaliação" class="botao-avaliacao">
+                </form>
+            </div>
+
+        </div>
+        
+        <div class="duvidas">
+            <h1>
+                <span></span>
+                DÚVIDAS DOS CONSUMIDORES
+                <span></span>
+            </h1>
+            <form action="" method="GET" class="form-duvidas">
+                <label for="duvida"> Tem alguma dúvida sobre esse produto? 
+                    Pergunte ao lojista e a outros compradores!</label>
+                <textarea name="duvida" id="duvida" cols="30" rows="10" placeholder="Pergunte sobre o produto, como utilizá-lo ou peça uma dica"></textarea>
+                <input type="submit" value="Enviar pergunta">
+            </form>
+            <div class="lista-duvidas">
+                <div>
+                    <div class="pergunta">
+                        <img src="Imagens/user_male.png" alt="">
+                        <div>
+                            <div class="nome">
+                                <p> Léo </p>
+                                -
+                                <small> 
+                                    <i class="fa-regular fa-calendar-days"></i> 
+                                    2 meses atrás
+                                </small>
+                            </div>
+                            <div>
+                                Já foi questionado aqui, mas ainda fiquei com dúvida, se eu 
+                                realizar a compra de um item deste, virá um par, para apenas uma orelha?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resposta">
+                        <img src="Imagens/logo.png" alt="">
+                        <div>
+                            <div class="nome">
+                                <p> Loja </p>
+                                -
+                                <small> 
+                                    <i class="fa-regular fa-calendar-days"></i> 
+                                    2 meses atrás
+                                </small>
+                            </div>
+                            <div>
+                                Já foi questionado aqui, mas ainda fiquei com dúvida, se eu 
+                                realizar a compra de um item deste, virá um par, para apenas uma orelha?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="pergunta">
+                        <img src="Imagens/user_female.png" alt="">
+                        <div>
+                            <div class="nome">
+                                <p> Léo </p>
+                                -
+                                <small> 
+                                    <i class="fa-regular fa-calendar-days"></i> 
+                                    2 meses atrás
+                                </small>
+                            </div>
+                            <div>
+                                Já foi questionado aqui, mas ainda fiquei com dúvida, se eu 
+                                realizar a compra de um item deste, virá um par, para apenas uma orelha?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resposta">
+                        <img src="Imagens/logo.png" alt="">
+                        <div>
+                            <div class="nome">
+                                <p> Loja </p>
+                                -
+                                <small> 
+                                    <i class="fa-regular fa-calendar-days"></i> 
+                                    2 meses atrás
+                                </small>
+                            </div>
+                            <div>
+                                Já foi questionado aqui, mas ainda fiquei com dúvida, se eu 
+                                realizar a compra de um item deste, virá um par, para apenas uma orelha?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="pergunta">
+                        <img src="Imagens/user_female.png" alt="">
+                        <div>
+                            <div class="nome">
+                                <p> Léo </p>
+                                -
+                                <small> 
+                                    <i class="fa-regular fa-calendar-days"></i> 
+                                    2 meses atrás
+                                </small>
+                            </div>
+                            <div>
+                                Já foi questionado aqui, mas ainda fiquei com dúvida, se eu 
+                                realizar a compra de um item deste, virá um par, para apenas uma orelha?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resposta">
+                        <img src="Imagens/logo.png" alt="">
+                        <div>
+                            <div class="nome">
+                                <p> Loja </p>
+                                -
+                                <small> 
+                                    <i class="fa-regular fa-calendar-days"></i> 
+                                    2 meses atrás
+                                </small>
+                            </div>
+                            <div>
+                                Já foi questionado aqui, mas ainda fiquei com dúvida, se eu 
+                                realizar a compra de um item deste, virá um par, para apenas uma orelha?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="duvida-paginacao">
+                <a href="#"> 
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <a href="#"> 
+                    1
+                </a>
+                <a href="#"> 
+                    2
+                </a>
+                <a href="#"> 
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="produtos-parecidos">
+        <h1>
+            PRODUTOS RELACIONADOS
+        </h1>
+        <div>
+            <div class="produto-parecido">
+                <a href="#">
+                    <img src="Imagens/fone.jpg" alt="">
+                    <p> 19% de desconto </p>
+                </a>
+                <div>
+                    <div class="avaliacao">
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-cinza"></i>
+                        <p> (1478) </p>
+                    </div>
+                    <h2> F9 fones de ouvido sem fio bluetooth
+                    </h2>
+                    <p> 2x de R$ 7,65 </p>
+                    <div class="preco">
+                        <p> A partir de <br> <small> R$ 29,99 </small> <span> R$ 15,30 </span> </p>
+                        <form action="" method="POST">
+                            <input type="submit" value="COMPRAR">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="produto-parecido">
+                <a href="#">
+                    <img src="Imagens/fone.jpg" alt="">
+                    <p> 19% de desconto </p>
+                </a>
+                <div>
+                    <div class="avaliacao">
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-cinza"></i>
+                        <p> (1478) </p>
+                    </div>
+                    <h2> F9 fones de ouvido sem fio bluetooth
+                    </h2>
+                    <p> 2x de R$ 7,65 </p>
+                    <div class="preco">
+                        <p> A partir de <br> <small> R$ 29,99 </small> <span> R$ 15,30 </span> </p>
+                        <form action="" method="POST">
+                            <input type="submit" value="COMPRAR">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="produto-parecido">
+                <a href="#">
+                    <img src="Imagens/fone.jpg" alt="">
+                    <p> 19% de desconto </p>
+                </a>
+                <div>
+                    <div class="avaliacao">
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-cinza"></i>
+                        <p> (1478) </p>
+                    </div>
+                    <h2> F9 fones de ouvido sem fio bluetooth
+                    </h2>
+                    <p> 2x de R$ 7,65 </p>
+                    <div class="preco">
+                        <p> A partir de <br> <small> R$ 29,99 </small> <span> R$ 15,30 </span> </p>
+                        <form action="" method="POST">
+                            <input type="submit" value="COMPRAR">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="produto-parecido">
+                <a href="#">
+                    <img src="Imagens/iphone.jpg" alt="">
+                    <p> 19% de desconto </p>
+                </a>
+                <div>
+                    <div class="avaliacao">
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-amarela"></i>
+                        <i class="fa-solid fa-star estrela-cinza"></i>
+                        <p> (1478) </p>
+                    </div>
+                    <h2> F9 fones de ouvido sem fio bluetooth
+                    </h2>
+                    <p> 2x de R$ 7,65 </p>
+                    <div class="preco">
+                        <p> A partir de <br> <small> R$ 29,99 </small> <span> R$ 15,30 </span> </p>
+                        <form action="" method="POST">
+                            <input type="submit" value="COMPRAR">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div>
+            <div class="rodape-secoes">
+                <h1> CATEGORIAS </h1>
+                <nav>
+                    <a href="#"> Acessórios e Peças </a>
+                    <a href="#"> Câmera e Foto </a>
+                    <a href="#"> Videogames </a>
+                    <a href="#"> Áudio e Vídeo </a>
+                    <a href="#"> Eletrônicos Inteligentes </a>
+                </nav>
+            </div>
+            <div class="rodape-secoes">
+                <h1> SOBRE A LOJA </h1>
+                <p> LOJA VIRTUAL ESPECIALIZADA EM ELETRÔNICOS. ACESSE A NOSSA LOJA
+                    PARA VOCÊ TER ACESSO AOS MAIS VARIADOS ELETRÔNICOS DO MERCADO!    
+                </p>
+            </div>
+            <div class="rodape-secoes">
+                <h1> ATENDIMENTO (DADOS FICTÍCIOS) </h1>
+                <p> 
+                    <i class="fa-solid fa-clock"></i>
+                    SEGUNDA A SEXTA DAS 9HRS AS 17HRS
+                </p>
+                <p> 
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (81) 99999-9999
+                </p>
+                <p> 
+                    <i class="fa-solid fa-envelope"></i>
+                    CONTATO@MYELETRONICS.COM.BR
+                </p>
+                <p> 
+                    <i class="fa-solid fa-location-dot"></i>
+                    RUA ANTONIO GUERRA, 999, UBERLÂNDIA - 77777-707
+                </p>
+            </div>
+        </div>
+        <div>
+            <p> Site desenvolvido em Django <br> Feito por Guilherme Gomes </p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

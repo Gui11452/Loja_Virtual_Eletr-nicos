@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <link rel="icon" href="Imagens/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/minhaconta/style.css">
+    <title> Minha conta </title>
+</head>
+<body>
+    
+    <header class="cabecalho-visivel">
+        <div class="logo-pesquisa">
+            <a href="index.html" class="logo">
+                <h1> MyEletronics </h1>
+                <img src="Imagens/logo.png">
+            </a>
+        
+            <form action="" method="GET">
+                <input type="search" name="pesquisa" class="pesquisa" 
+                placeholder="Digite o que você procura...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="perfil">
+                <a href="meuspedidos.html"> 
+                    <i class="fa-solid fa-bars"></i>
+                    Meus pedidos 
+                </a>
+                <a href="minhaconta.html"> 
+                    <i class="fa-solid fa-user"></i>
+                    Minha conta 
+                </a>
+            </div>
+            <div class="carrinho">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p> 0 </p>
+            </div>
+        </div>
+        <div class="navegacao">
+            <div>
+                <nav>
+                    <a href="categoria.html"> Acessórios e Peças </a>
+                    <span></span>
+                    <a href="categoria.html"> Câmera e Foto </a>
+                    <span></span>
+                    <a href="categoria.html"> Videogames </a>
+                    <span></span>
+                    <a href="categoria.html"> Áudio e Vídeo </a>
+                    <span></span>
+                    <a href="categoria.html"> Eletrônicos Inteligentes </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <header class="cabecalho-oculto">
+        <div>
+            <i class="fa-solid fa-house"></i>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p> 0 </p>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="index.html" class="logo">
+                <h1> MyEletronics </h1>
+                <img src="Imagens/logo.png">
+            </a>
+        </div>
+        <div class="pesquisa-oculta">
+            <form action="" method="GET">
+                <input type="search" name="pesquisa" class="pesquisa" 
+                placeholder="Digite o que você procura...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="botao">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="navegacao-oculta">
+            <nav>
+                <a href="categoria.html"> Acessórios e Peças </a>
+                <a href="categoria.html"> Câmera e Foto </a>
+                <a href="categoria.html"> Videogames </a>
+                <a href="categoria.html"> Áudio e Vídeo </a>
+                <a href="categoria.html"> Eletrônicos Inteligentes </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <div>
+            <div class="area-conta">
+                <div class="abas">
+                    <div class="aba-conta">
+                        <p>
+                            <i class="fa-solid fa-user"></i>
+                            Minha Conta
+                        </p>
+                    </div>
+                    <div class="aba-pedidos backgroundAbaCinza">
+                        <p>
+                            <i class="fa-solid fa-table-list"></i>
+                            Meus Pedidos
+                        </p>
+                    </div>
+                </div>
+                <div class="conta esconder-conta">
+                    <h1> 
+                        Bem vindo(a) de volta 
+                        <span> 
+                            Usuário 
+                        </span> 
+                        <i class="fa-regular fa-face-smile"></i>
+                    </h1>
+                    <div>
+                        <div>
+                            <h2> 
+                                <i class="fa-solid fa-list"></i>
+                                Dados Cadastrais 
+                            </h2>
+                            <div class="informacoes">
+                                <p><strong>Nome</strong>: Fulano Ferreira da Silva</p>
+                                <p><strong>Usuário</strong>: Usuário</p>
+                                <p><strong>E-mail</strong>: email@gmail.com</p>
+                                <p><strong>CPF</strong>: 123.456.789.10</p>
+                                <p><strong>Telefone celular</strong>: (11) 99999-9999</p>
+                                <p><strong>Idade</strong>: 35</p>
+                                <p><strong>Data de Nascimento</strong>: 23/03/1986</p>
+                                <div>
+                                    <form action="" method="POST">
+                                        <input type="submit" value="Alterar senha">
+                                    </form>
+                                    <span></span>
+                                    <form action="" method="POST">
+                                        <input type="submit" value="Editar dados cadastrais">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2> 
+                                <i class="fa-solid fa-location-dot"></i>
+                                Endereço Principal
+                            </h2>
+                            <div class="informacoes">
+                                <p><strong>Rua/Avenida</strong>: Rua Fictícia</p>
+                                <p><strong>Número</strong>: 123 </p>
+                                <p><strong>Apartamento</strong>: 456 </p>
+                                <p><strong>Complemento</strong>: perto do restaurante fictício </p>
+                                <p><strong>CEP</strong>: 12345-678 </p>
+                                <p><strong>Bairro</strong>: Bairro Fictício </p>
+                                <p><strong>Cidade</strong>: Cidade Fictícia </p>
+                                <p><strong>Estado(UF)</strong>: SP </p>
+                                <div>
+                                    <span></span>
+                                    <form action="" method="POST">
+                                        <input type="submit" value="Editar endereço principal">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pedidos">
+                    <div class="ultimo-pedido">
+                        <h1> Último Pedido / Número 242634</h1>
+                        <span></span>
+                        <div class="dados-ultimo-pedido">
+                            <div>
+                                <h2> 
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Dados do Pedido
+                                </h2>
+                                <div class="dados">
+                                    <p> <strong> Situação</strong>: Pedido Enviado </p>
+                                    <p> <strong> Data do Pedido</strong>: 08/04/2022 19:38 </p>
+                                    <p> <strong> Valor</strong>: R$ 53,50 </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h2> 
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Dados da Entrega
+                                </h2>
+                                <div class="dados">
+                                    <p> <strong> Destinatário</strong>: Fulano Ferreira da Silva </p>
+                                    <p> <strong> Endereço</strong>: Rua Fictícia, 123 apt 456 Bairro Fictício </p>
+                                    <p> <strong> CEP</strong>: 12345-678 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="" method="POST">
+                            <input type="submit" value="Visualizar pedido completo">
+                        </form>
+                    </div>
+                    <div class="lista-pedidos">
+                        <h1> Consultar pedidos / Preencha os campos para localizar seus pedidos antigos. </h1>
+                        <span></span>
+                        <form action="" method="GET">
+                            <div>
+                                <label for="numeropedido"> Número do Pedido: </label>
+                                <input type="number" id="numeropedido" min="1">
+                            </div>
+                            <div>
+                                <label for="mes"> Mês: </label>
+                                <select name="mes" id="mes">
+                                    <option value="1"> 1 </option>
+                                    <option value="2"> 2 </option>
+                                    <option value="3"> 3 </option>
+                                    <option value="4"> 4 </option>
+                                    <option value="5"> 5 </option>
+                                    <option value="6"> 6 </option>
+                                    <option value="7"> 7 </option>
+                                    <option value="8"> 8 </option>
+                                    <option value="9"> 9 </option>
+                                    <option value="10"> 10 </option>
+                                    <option value="11"> 11 </option>
+                                    <option value="12"> 12 </option>
+                                </select>
+                                <label for="ano"> Ano: </label>
+                                <select name="ano" id="ano">
+                                    <option value="2022"> 2022 </option>
+                                    <option value="2021"> 2021 </option>
+                                </select>
+                            </div>
+                            <div>
+                                <input type="submit" value="Buscar">
+                            </div>
+                        </form>
+                    </div>
+                    <h2> Pedidos realizados na loja (4): </h2>
+                    <div>
+                        <div class="grid-titulos">
+                            <div class="grid titulo">
+                                Número
+                            </div>
+                            <div class="grid titulo">
+                                Data
+                            </div>
+                            <div class="grid titulo situacao">
+                                Situação
+                            </div>
+                            <div class="grid titulo">
+                                Pedido
+                            </div>
+                        </div>
+                        <div class="grid-pedidos">
+                            <div class="grid">
+                                <a href="pedido.html"> 242634 </a>
+                            </div>
+                            <div class="grid">
+                                08/04/2022 19:38
+                            </div>
+                            <div class="grid situacao">
+                                <p class="enviado"> Pedido Enviado </p>
+                                <!--
+                                <p class="analise"> Em Análise </p>
+                                <p class="cancelado"> Pedido Cancelado </p>-->
+                            </div>
+                            <div class="grid">
+                                R$ 53,50
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div>
+            <div class="rodape-secoes">
+                <h1> CATEGORIAS </h1>
+                <nav>
+                    <a href="#"> Acessórios e Peças </a>
+                    <a href="#"> Câmera e Foto </a>
+                    <a href="#"> Videogames </a>
+                    <a href="#"> Áudio e Vídeo </a>
+                    <a href="#"> Eletrônicos Inteligentes </a>
+                </nav>
+            </div>
+            <div class="rodape-secoes">
+                <h1> SOBRE A LOJA </h1>
+                <p> LOJA VIRTUAL ESPECIALIZADA EM ELETRÔNICOS. ACESSE A NOSSA LOJA
+                    PARA VOCÊ TER ACESSO AOS MAIS VARIADOS ELETRÔNICOS DO MERCADO!    
+                </p>
+            </div>
+            <div class="rodape-secoes">
+                <h1> ATENDIMENTO (DADOS FICTÍCIOS) </h1>
+                <p> 
+                    <i class="fa-solid fa-clock"></i>
+                    SEGUNDA A SEXTA DAS 9HRS AS 17HRS
+                </p>
+                <p> 
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (81) 99999-9999
+                </p>
+                <p> 
+                    <i class="fa-solid fa-envelope"></i>
+                    CONTATO@MYELETRONICS.COM.BR
+                </p>
+                <p> 
+                    <i class="fa-solid fa-location-dot"></i>
+                    RUA ANTONIO GUERRA, 999, UBERLÂNDIA - 77777-707
+                </p>
+            </div>
+        </div>
+        <div>
+            <p> Site desenvolvido em Django <br> Feito por Guilherme Gomes </p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

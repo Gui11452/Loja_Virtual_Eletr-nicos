@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <link rel="icon" href="Imagens/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/carrinho/style.css">
+    <title> Carrinho </title>
+</head>
+<body>
+    
+    <header class="cabecalho-visivel">
+        <div class="logo-pesquisa">
+            <a href="index.html" class="logo">
+                <h1> MyEletronics </h1>
+                <img src="Imagens/logo.png">
+            </a>
+        
+            <form action="" method="GET">
+                <input type="search" name="pesquisa" class="pesquisa" 
+                placeholder="Digite o que você procura...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="perfil">
+                <a href="meuspedidos.html"> 
+                    <i class="fa-solid fa-bars"></i>
+                    Meus pedidos 
+                </a>
+                <a href="minhaconta.html"> 
+                    <i class="fa-solid fa-user"></i>
+                    Minha conta 
+                </a>
+            </div>
+            <div class="carrinho">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p> 0 </p>
+            </div>
+        </div>
+        <div class="navegacao">
+            <div>
+                <nav>
+                    <a href="#"> Acessórios e Peças </a>
+                    <span></span>
+                    <a href="#"> Câmera e Foto </a>
+                    <span></span>
+                    <a href="#"> Videogames </a>
+                    <span></span>
+                    <a href="#"> Áudio e Vídeo </a>
+                    <span></span>
+                    <a href="#"> Eletrônicos Inteligentes </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <header class="cabecalho-oculto">
+        <div>
+            <i class="fa-solid fa-house"></i>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p> 0 </p>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="index.html" class="logo">
+                <h1> MyEletronics </h1>
+                <img src="Imagens/logo.png">
+            </a>
+        </div>
+        <div class="pesquisa-oculta">
+            <form action="" method="GET">
+                <input type="search" name="pesquisa" class="pesquisa" 
+                placeholder="Digite o que você procura...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="botao">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="navegacao-oculta">
+            <nav>
+                <a href="#"> Acessórios e Peças </a>
+                <a href="#"> Câmera e Foto </a>
+                <a href="#"> Videogames </a>
+                <a href="#"> Áudio e Vídeo </a>
+                <a href="#"> Eletrônicos Inteligentes </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <div>
+            <h1> 
+                <i class="fa-solid fa-cart-shopping"></i>
+                Carrinho de compras 
+            </h1>
+            <div class="grid">
+                <div class="grid-carrinho">
+                    <div class="informacoes-carrinho titulo">
+                        Produto
+                    </div>
+                    <div class="informacoes-carrinho titulo">
+                        <p> Quantidade </p>/
+                        <p> Preço </p>
+                        <p> Unitário </p>
+                    </div>
+                    <div class="informacoes-carrinho titulo">
+                        Subtotal
+                    </div>
+                    <div class="informacoes-carrinho titulo">
+                        Excluir
+                    </div>
+                    <div class="informacoes-carrinho">
+                        <img src="Imagens/fone.jpg" alt="">
+                        <div>
+                            <a href=""> PAR Brinco Masculino Magnético / Imã / Alargador Falso - Vários Tamanhos - PAR </a>
+                            <p> Variação: brinco vermelho e preto </p>
+                        </div>
+                    </div>
+                    <div class="informacoes-carrinho">
+                        <div class="quantidade-itens">
+                            <div>
+                                2 x R$ 23,50
+                            </div>
+                            <div>
+                                <form action="" method="POST">
+                                    <a href="#" style="color: black;">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </a>
+                                    <input type="number" name="quantidade" value="1" min="1">
+                                    <a href="#" style="color: black;">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="informacoes-carrinho">
+                        <p> R$ 47,00 </p>
+                    </div>
+                    <div class="informacoes-carrinho">
+                        <a href="" style="color: black;">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </a>
+                    </div>
+                    <div class="informacoes-carrinho">
+                        <img src="Imagens/fone.jpg" alt="">
+                        <div>
+                            <a href=""> PAR Brinco Masculino Magnético / Imã / Alargador Falso - Vários Tamanhos - PAR </a>
+                            <p> Variação: brinco vermelho e preto </p>
+                        </div>
+                    </div>
+                    <div class="informacoes-carrinho">
+                        <div class="quantidade-itens">
+                            <div>
+                                2 x R$ 23,50
+                            </div>
+                            <div>
+                                <form action="" method="POST">
+                                    <a href="#" style="color: black;">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </a>
+                                    <input type="number" name="quantidade" value="1" min="1">
+                                    <a href="#" style="color: black;">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="informacoes-carrinho">
+                        <p> R$ 47,00 </p>
+                    </div>
+                    <div class="informacoes-carrinho">
+                        <a href="" style="color: black;">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </a>
+                    </div>
+                    <div class="informacoes-carrinho">
+                        <img src="Imagens/fone.jpg" alt="">
+                        <div>
+                            <a href=""> PAR Brinco Masculino Magnético / Imã / Alargador Falso - Vários Tamanhos - PAR </a>
+                            <p> Variação: brinco vermelho e preto </p>
+                        </div>
+                    </div>
+                    <div class="informacoes-carrinho">
+                        <div class="quantidade-itens">
+                            <div>
+                                2 x R$ 23,50
+                            </div>
+                            <div>
+                                <form action="" method="POST">
+                                    <a href="#" style="color: black;">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </a>
+                                    <input type="number" name="quantidade" value="1" min="1">
+                                    <a href="#" style="color: black;">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="informacoes-carrinho">
+                        <p> R$ 47,00 </p>
+                    </div>
+                    <div class="informacoes-carrinho">
+                        <a href="" style="color: black;">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </a>
+                    </div>
+
+                    <div class="informacoes-carrinho titulo">
+                    </div>
+                    <div class="informacoes-carrinho titulo">
+                        <p> Subtotal sem frete: R$ 141,00 </p>
+                    </div>
+                    <div class="informacoes-carrinho titulo">
+                        <p> Frete: R$ 9,50 </p>
+                    </div>
+                    <div class="informacoes-carrinho titulo">
+                        <p> Subtotal com frete: R$ 150,50 </p>
+                    </div>
+                </div>
+                <div class="botoes">
+                    <form action="" method="POST">
+                        <input type="submit" value="CONTINUAR COMPRANDO">
+                    </form>
+                    <form action="" method="POST">
+                        <input type="submit" value="FINALIZAR COMPRAR">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div>
+            <div class="rodape-secoes">
+                <h1> CATEGORIAS </h1>
+                <nav>
+                    <a href="#"> Acessórios e Peças </a>
+                    <a href="#"> Câmera e Foto </a>
+                    <a href="#"> Videogames </a>
+                    <a href="#"> Áudio e Vídeo </a>
+                    <a href="#"> Eletrônicos Inteligentes </a>
+                </nav>
+            </div>
+            <div class="rodape-secoes">
+                <h1> SOBRE A LOJA </h1>
+                <p> LOJA VIRTUAL ESPECIALIZADA EM ELETRÔNICOS. ACESSE A NOSSA LOJA
+                    PARA VOCÊ TER ACESSO AOS MAIS VARIADOS ELETRÔNICOS DO MERCADO!    
+                </p>
+            </div>
+            <div class="rodape-secoes">
+                <h1> ATENDIMENTO (DADOS FICTÍCIOS) </h1>
+                <p> 
+                    <i class="fa-solid fa-clock"></i>
+                    SEGUNDA A SEXTA DAS 9HRS AS 17HRS
+                </p>
+                <p> 
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (81) 99999-9999
+                </p>
+                <p> 
+                    <i class="fa-solid fa-envelope"></i>
+                    CONTATO@MYELETRONICS.COM.BR
+                </p>
+                <p> 
+                    <i class="fa-solid fa-location-dot"></i>
+                    RUA ANTONIO GUERRA, 999, UBERLÂNDIA - 77777-707
+                </p>
+            </div>
+        </div>
+        <div>
+            <p> Site desenvolvido em Django <br> Feito por Guilherme Gomes </p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

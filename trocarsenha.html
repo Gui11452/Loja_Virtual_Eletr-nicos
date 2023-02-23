@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <link rel="icon" href="Imagens/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/logineregistro/style.css">
+    <title> Trocar senha </title>
+</head>
+<body>
+    
+    <header class="cabecalho-visivel">
+        <div class="logo-pesquisa">
+            <a href="index.html" class="logo">
+                <h1> MyEletronics </h1>
+                <img src="Imagens/logo.png">
+            </a>
+        
+            <form action="" method="GET">
+                <input type="search" name="pesquisa" class="pesquisa" 
+                placeholder="Digite o que você procura...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="perfil">
+                <a href="#"> 
+                    <i class="fa-solid fa-bars"></i>
+                    Meus pedidos 
+                </a>
+                <a href="#"> 
+                    <i class="fa-solid fa-user"></i>
+                    Minha conta 
+                </a>
+            </div>
+            <div class="carrinho">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p> 0 </p>
+            </div>
+        </div>
+        <div class="navegacao">
+            <div>
+                <nav>
+                    <a href="#"> Acessórios e Peças </a>
+                    <span></span>
+                    <a href="#"> Câmera e Foto </a>
+                    <span></span>
+                    <a href="#"> Videogames </a>
+                    <span></span>
+                    <a href="#"> Áudio e Vídeo </a>
+                    <span></span>
+                    <a href="#"> Eletrônicos Inteligentes </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <header class="cabecalho-oculto">
+        <div>
+            <i class="fa-solid fa-house"></i>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p> 0 </p>
+                </span>
+            </div>
+        </div>
+        <div>
+            <a href="index.html" class="logo">
+                <h1> MyEletronics </h1>
+                <img src="Imagens/logo.png">
+            </a>
+        </div>
+        <div class="pesquisa-oculta">
+            <form action="" method="GET">
+                <input type="search" name="pesquisa" class="pesquisa" 
+                placeholder="Digite o que você procura...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="botao">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="navegacao-oculta">
+            <nav>
+                <a href="#"> Acessórios e Peças </a>
+                <a href="#"> Câmera e Foto </a>
+                <a href="#"> Videogames </a>
+                <a href="#"> Áudio e Vídeo </a>
+                <a href="#"> Eletrônicos Inteligentes </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <div>
+            <div class="area-login">
+                <h1> 
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    Troque a senha 
+                </h1>
+                <p> Pegue o código que foi enviado para o seu e-mail e use ele para trocar a senha. 
+                    <strong>Coloque o e-mail que esteja atrelado a sua conta!</strong> </p>
+                <div class="sucesso">
+                    Um código foi enviado para o seu e-mail. Entre no link, copie o código e com ele, 
+                    troque a senha.
+                </div>
+                <div class="erro">
+                   Esse e-mail não está atrelado a nenhuma conta.
+                </div>
+                <form action="" method="POST">
+                    <label for="email"> E-mail: </label>
+                    <input type="email" name="email" id="email" 
+                    placeholder="email@gmail.com">
+                    <label for="codigo"> Código: </label>
+                    <input type="number" name="codigo" id="codigo" min="1000" max="9999">
+                    <label for="senha1"> Nova senha: </label>
+                    <input type="password" name="senha1" id="senha1">
+                    <label for="senha2"> Repetir nova senha: </label>
+                    <input type="password" name="senha2" id="senha2">
+                    <div>
+                        <input type="submit" value="Trocar senha" style="width: 13rem;">
+                    </div>
+                </form>
+                <div>
+                    <span></span>
+                    <a href="#">
+                        Não recebeu o código no e-mail? Clique aqui para enviarmos outro!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div>
+            <div class="rodape-secoes">
+                <h1> CATEGORIAS </h1>
+                <nav>
+                    <a href="#"> Acessórios e Peças </a>
+                    <a href="#"> Câmera e Foto </a>
+                    <a href="#"> Videogames </a>
+                    <a href="#"> Áudio e Vídeo </a>
+                    <a href="#"> Eletrônicos Inteligentes </a>
+                </nav>
+            </div>
+            <div class="rodape-secoes">
+                <h1> SOBRE A LOJA </h1>
+                <p> LOJA VIRTUAL ESPECIALIZADA EM ELETRÔNICOS. ACESSE A NOSSA LOJA
+                    PARA VOCÊ TER ACESSO AOS MAIS VARIADOS ELETRÔNICOS DO MERCADO!    
+                </p>
+            </div>
+            <div class="rodape-secoes">
+                <h1> ATENDIMENTO (DADOS FICTÍCIOS) </h1>
+                <p> 
+                    <i class="fa-solid fa-clock"></i>
+                    SEGUNDA A SEXTA DAS 9HRS AS 17HRS
+                </p>
+                <p> 
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (81) 99999-9999
+                </p>
+                <p> 
+                    <i class="fa-solid fa-envelope"></i>
+                    CONTATO@MYELETRONICS.COM.BR
+                </p>
+                <p> 
+                    <i class="fa-solid fa-location-dot"></i>
+                    RUA ANTONIO GUERRA, 999, UBERLÂNDIA - 77777-707
+                </p>
+            </div>
+        </div>
+        <div>
+            <p> Site desenvolvido em Django <br> Feito por Guilherme Gomes </p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Nunito:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border-collapse: collapse;
+    text-decoration: none;
+}
+
+body{
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+a{
+    display: inline-block;
+}
+
+:root{
+    --fonte-titulo: 'Manrope', sans-serif;
+    --fonte-subtitulo: 'Montserrat', sans-serif;
+    --fonte-paragrafo: 'Nunito', sans-serif;
+    --cor-logo: #484058;
+    --cor-cinza: #454545;
+    --cor-cinza-super-claro: #aaaaaa;
+    --cor-azul: #067e96;
+    --cor-verde: rgb(157, 219, 138);
+    --cor-amarela: rgb(254, 215, 0);
+    --cor-cinza-star: #d0d0d0;
+    --cor-vermelha-alerta: #f7d7da;
+    --cor-verde-alerta: #d4edda;
+}
+
+.sucesso, .erro{
+    background: var(--cor-verde-alerta);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    font-family: var(--fonte-paragrafo);
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.erro{
+    background: var(--cor-vermelha-alerta);
+}
+
+/* Cabecalho Visivel - Início */
+
+.cabecalho-visivel>div.logo-pesquisa{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--fonte-titulo);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--cor-logo);
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+    transition: all 0.2s;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+}
+
+.logo img{
+    width: 5rem;
+}
+
+.cabecalho-visivel form, .pesquisa-oculta form{
+    width: 100%;
+    position: relative;
+}
+
+.cabecalho-visivel form i, .pesquisa-oculta form i{
+    position: absolute;
+    font-size: 2.3rem;
+    right: 1rem;
+    top: 1.2rem;
+}
+
+.pesquisa{
+    width: 100%;
+    font-size: 1.7rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.01rem solid var(--cor-cinza-super-claro);
+    font-family: var(--fonte-paragrafo);
+    transition: all 0.2s;
+}
+
+.pesquisa:focus{
+    transform: scale(1.01);
+}
+
+.perfil{
+    font-size: 1.5rem;
+    display: flex;
+    gap: 0.3rem;
+    flex-flow: column nowrap;
+}
+
+.perfil a{
+    display: inline-block;
+    color: black;
+    width: 12rem;
+    transition: all 0.2s;
+}
+
+.perfil a:hover{
+    transform: scale(1.08);
+}
+
+.carrinho{
+    font-size: 2rem;
+    gap: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 10rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.carrinho:hover{
+    transform: scale(1.08);
+}
+
+.navegacao{
+    width: 100%;
+    background: var(--cor-cinza);
+}
+
+.navegacao>div{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacao>div nav{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacao>div a{
+    color: #fff;
+    font-family: var(--fonte-subtitulo);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.navegacao>div a:hover{
+    transform: scale(1.1);
+}
+
+.navegacao>div span{
+    width: 0.2rem;
+    display: inline-block;
+    height: 3rem;
+    background: #fff;
+    border-radius: 1rem;
+}
+
+/* Cabecalho Visivel - Fim */
+
+/* Cabecalho Oculto - Inicio */
+
+.cabecalho-oculto>div:nth-of-type(1){
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 0.1rem solid #ccc;
+}
+
+.cabecalho-oculto>div:nth-of-type(1) div{
+    display: flex;
+    gap: 2rem;
+}
+
+.cabecalho-oculto>div:nth-of-type(1) span{
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.cabecalho-oculto>div:nth-of-type(1) i{
+    transition: all 0.2s;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.cabecalho-oculto>div:nth-of-type(1) i:hover{
+    transform: scale(1.1);
+}
+
+.cabecalho-oculto>div:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.pesquisa-oculta{
+    width: 95%;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.botao{
+    width: 4.5rem;
+    display: flex;
+    padding: 0.7rem;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    border: 0.2rem solid black;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.botao:hover{
+    transform: scale(1.1);
+}
+
+.botao span{
+    width: 3rem;
+    height: 0.4rem;
+    border-radius: 1rem;
+    background: black;
+}
+
+.botao>span:nth-of-type(1).um{
+    width: 4rem;
+    transform: translate(0, 1rem) rotate(-45deg);
+}
+
+.botao>span:nth-of-type(2).dois{
+    opacity: 0;
+}
+
+.botao>span:nth-of-type(3).tres{
+    width: 4rem;
+    transform: translate(0, -1.1rem) rotate(45deg);
+}
+
+.navegacao-oculta{
+    display: none;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+body .cabecalho-oculto .navegacao-oculta-visivel{
+    display: block;
+}
+
+.navegacao-oculta nav a{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    padding: 1rem;
+    background: var(--cor-cinza);
+    border: 0.1rem solid black;
+}
+
+.navegacao-oculta nav{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+/* Cabecalho Oculto - Fim */
+
+/* Container - Início */
+
+.container{
+    width: 100%;
+}
+
+.container>div{
+    width: 90%;
+    margin: 4rem auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-login{
+    width: 40rem;
+    border: 0.1rem solid var(--cor-cinza-super-claro);
+    padding: 2rem;
+    border-radius: 1rem;
+    font-family: var(--fonte-subtitulo);
+    box-shadow: 0.2rem 0.2rem 1rem var(--cor-cinza-super-claro);
+}
+
+.area-login a{
+    color: black;
+    font-family: var(--fonte-paragrafo);
+    transition: all 0.2s;
+}
+
+.area-login a:hover{
+    transform: scale(1.05);
+}
+
+label{
+    display: block;
+}
+
+.area-login h1{
+    font-family: var(--fonte-titulo);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.area-login span{
+    width: 100%;
+    background: black;
+    border-radius: 1rem;
+    display: block;
+    height: 0.3rem;
+    margin: 1rem 0;
+}
+
+.area-login form{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.area-login form div, .area-login div{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.area-login form h2{
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+.area-login input, .area-login select{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--cor-cinza-super-claro);
+    transition: all 0.2s;
+}
+
+.area-login p{
+    text-align: center;
+}
+
+.area-login input[type="submit"]{
+    color: #fff;
+    background: var(--cor-cinza);
+    border-radius: 1rem;
+    width: 11rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.area-login input[type="submit"]:hover{
+    transform: scale(1.05);
+}
+
+.area-login input:focus{
+    transform: scale(1.005);
+}
+
+/* Container - Fim */
+
+/* Rodapé - Início */
+
+.rodape{
+    width: 100%;
+    background: var(--cor-cinza);
+}
+
+.rodape>div{
+    width: 90%;
+    margin: 0 auto;
+    padding: 4rem;
+    display: flex;
+    gap: 4rem;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.rodape-secoes nav{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.rodape-secoes a{
+    color: #fff;
+    transition: all 0.2s;
+}
+
+.rodape-secoes a:hover{
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+.rodape-secoes, .rodape>div:nth-of-type(2){
+    width: 40rem;
+    color: #fff;
+    font-family: var(--fonte-subtitulo);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.rodape>div:nth-of-type(2){
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.rodape-secoes h1{
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.rodape-secoes p{
+    font-size: 1.2rem;
+}
+
+/* Rodapé - Fim */
+
+@media (min-width: 1100px){
+
+    html{
+        font-size: 62.5%;
+    }
+
+    .cabecalho-visivel{
+        width: 100%;
+        height: auto;
+    }
+
+    .cabecalho-oculto{
+        display: none;
+        width: 100%;
+        font-family: var(--fonte-titulo);
+    }
+    
+
+}
+
+@media (max-width: 1099.98px) and (min-width: 749.98px){
+
+    html{
+        font-size: 62.5%;
+    }
+
+    .cabecalho-visivel{
+        width: 100%;
+        height: auto;
+    }
+
+    .cabecalho-oculto{
+        display: none;
+        width: 100%;
+        font-family: var(--fonte-titulo);
+    }
+
+}
+
+@media (max-width: 749.98px) and (min-width: 690px){
+
+    html{
+        font-size: 55.5%;
+    }
+
+    .cabecalho-visivel{
+        display: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .cabecalho-oculto{
+        width: 100%;
+        font-family: var(--fonte-titulo);
+    }
+
+    .rodape>div{
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 689.98px) and (min-width: 495px){
+
+    html{
+        font-size: 55.5%;
+    }
+
+    .cabecalho-visivel{
+        display: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .cabecalho-oculto{
+        width: 100%;
+        font-family: var(--fonte-titulo);
+    }
+
+    .rodape>div{
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 494.98px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .cabecalho-visivel{
+        display: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .cabecalho-oculto{
+        width: 100%;
+        font-family: var(--fonte-titulo);
+    }
+
+    .rodape>div{
+        justify-content: center;
+        align-items: center;
+    }
+
+}
